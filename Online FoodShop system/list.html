@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list of align-items</title>
+    <style>
+        body{
+            text-align:center;
+           
+            background-image: url(Momo.jpg);
+            background-repeat: no-repeat;
+            backdrop-filter: blur(4px);
+            background-size: cover;
+            
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            color: beige;
+            font-size: 30px;
+        }
+        body h1{
+            text-decoration: underline;
+        }
+       
+          
+    </style>
+</head>
+<body>
+   
+    <h1>VARIETY OF MOMO</h1>
+    <ul type="none">
+        <li>Chicken Momo</li>
+         <ul type="none">  <li>Steam Momo Rs 180 <button id="steamchickenmomo">ORDER NOW</button> </li>
+            <ul type="none">
+            <li>Fried Momo Rs 190 <button id="friedchickenmomo">ORDER NOW</button></li>
+            <li>C Momo Rs 200 <button id="cchickenmomo">ORDER NOW</button></li>
+            </ul>
+        
+        <li>Buff Momo</li>
+        <ul type="none">
+            <li>Steam Momo Rs 150 <button id="steambuffmomo">ORDER NOW</button></li>
+            <li>Fried Momo Rs 160 <button id="friedbuffmomo">ORDER NOW</button></li>
+            <li>C Momo Rs 170<button id="Cbuffmomo">ORDER NOW</button></li>
+        </ul>
+        <li>Mutton Momo</li>
+        <ul type="none">
+            <li>Steam Momo Rs 200 <button id="steammuttonmomo">ORDER NOW</button></li>
+            <li>Fried Momo Rs 210 <button id="Friedmuttonmomo">ORDER NOW</button></li>
+            <li>C Momo Rs 220 <button id="Cmottonmomo">ORDER NOW</button></li>
+        </ul>
+    </ul>
+</div>
+    <script>
+        let btnscm= document.getElementById('steamchickenmomo');
+        let btnfcm= document.getElementById('friedchickenmomo');
+        let btnccm= document.getElementById('cchickenmomo');
+        let btnsbm=document.getElementById('steambuffmomo');
+        let btnfbm=document.getElementById('friedbuffmomo');
+        let btncbm=document.getElementById('Cbuffmomo');
+        let btnsmm=document.getElementById('steammuttonmomo');
+        let btnfmm=document.getElementById('friedmuttonmomo');
+        let btncmm=document.getElementById('Cmottonmomo');
+       
+        btnscm.addEventListener('click',steamchickenmomo);
+        function steamchickenmomo(){
+            alert("Steam Chicken Momo is ordered");
+        }
+
+        btnfcm.addEventListener('click', friedchikenmomo);
+        function friedchickenmomo(){
+            alert("Fried Chicken Momo is ordered");
+        }
+
+
+        btnccm.addEventListener('click', cchickenmomo);
+
+        function cchickenmomo(){
+            alert("C Chicken Momo is ordered");
+        
+        }
+
+        btnsbm.addEventListener('click', steambuffmomo);
+        function steambuffmomo(){
+            alert("Steam buff momo is ordered");
+        }
+
+
+
+        btnfbm.addEventListener('click', friedbuffmomo);
+
+        function friedbuffmomo(){
+            alert("Fried buff momo is ordered");
+        }
+
+
+        btncbm.addEventListener('click', Cbuffmomo);
+         function Cbuffmomo(){
+            alert("C buff momo is ordered");
+         }
+
+
+
+        btnsmm.addEventListener('click', steammuttonmomo);
+        function steammuttonmomo(){
+            alert("Steam Mutton momo is ordered");
+        }
+
+
+        btnfmm.addEventListener('click', firedmuttonmomo);
+        function firedmuttonmomo()
+    {
+
+        alert("Fried mutton Momo is ordered");
+    }
+
+
+        btncmm.addEventListener('click', Cmuttonmomo);
+        function Cmuttonmomo(){
+            alert("C Mutton momo is ordered");
+        }
+
+    </script>
+</body>
+</html>

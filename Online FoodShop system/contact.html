@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>css Challenge #1</title>
+  <style>
+    body{
+     font-size: 16px;
+   background-size:auto;
+   background-color: rgb(202, 235, 140);
+
+}
+h1{
+    text-align: center;
+    border-bottom:2px solid green;
+}
+form{
+     width:400px;
+     padding: 15px 40px 40px;
+     margin: 50px auto 0;
+     border: 1px solid black;
+     border-radius: 5px;
+}
+.background{
+    background-color: rgb(218, 236, 152);
+    height: auto;
+    width:400px;
+}
+input{
+    border:1px solid black;
+    padding:10px;
+    width:100%;
+    box-sizing:border-box;
+    border-radius:2px;
+}
+label{
+    display: block;
+    margin-bottom:10px;
+}
+div{
+    padding-bottom:12px;
+}
+textarea{
+    border:1px solid black;
+    border-radius:5px;
+
+}
+input[type="submit"]{
+    font-size: 20px;
+    background-color:green;
+    border-color:black;
+    cursor:pointer;
+    box-shadow:0 3px 0 gray;
+    border-radius:10px;
+    color:white;
+    width:150px;
+}
+input[type="submit"]:hover{
+    background-color:brown;
+    color:blue;
+}
+  </style>
+</head>
+<body>
+    <form   action class="background"  >
+   <h1>CONTACT US</h1>
+   <p>Please fill all the texts in the fields</p>
+   
+    <div>
+        <label> Your Full Name:</label>
+        <input type="text" name="" placeholder="Enter your name here">
+    </div>
+    <div>
+        <label>Your Phone No:</label>
+        <input type="number" name="" placeholder="Enter number here">
+    </div>
+    <div>
+        <label>Your Email ID:</label>
+        <input type="email" name="" placeholder="Enter email here">
+    </div>
+
+    <div>
+        <label>Message:</label>
+       <textarea name="" id="" placeholder="Write your message here" cols="52"   rows="6"></textarea>
+    </div>
+    <div>
+        <label>Address City:</label>
+        <select name="" id="">
+            <option value="--Select your city--">--Select your city--</option>
+					<option value="Birendranagar">Birendranagar</option>
+				   <option value="Tulsipur">Tulsipur</option>
+				   <option value="Kathmandu">Kathmandu</option>
+				   <option value="Pokhara">Pokhara</option>
+				   <option value="Dhangadhi">Dhangadhi</option>
+				   <option value="Ghorahi">Ghorahi</option>
+				   <option value="Mahendranagar">Mahendranagar</option>
+				   <option value="Butwal">Butwal</option>
+				   <option value="Itahari">Itahari</option>
+				   <option value="Kaakadvitta">Kaakadvitta</option>
+				   <option value="Janakpur">Janakpur</option>
+				   
+				   <option value="Nepalgunj">Nepalgunj</option>
+				   <option value="Kohalpur">Kohalpur</option>
+				   <option value="Biratnagar">Biratnagar</option>
+				   <option value="Dharan">Dharan</option>
+				   <option value="Birgunj">Birgunj</option>
+           
+        </select>
+        
+    </div>
+    <div>
+        <input type="submit" id="submit" value="SEND">
+        <input type="submit"  id="reset" name="" value="RESET">
+    </div>
+    <script>
+        let submitbtn=document.getElementById('submit')
+        let resetbtn=document.getElementById('reset')
+        submitbtn.addEventListener('click',submit)
+        function submit(){
+            alert("Information has been submitted...")
+        }
+        resetbtn.addEventListener('click',reset)
+        function reset(){
+            alert("Reset process Start...");
+        }
+    </script>
+    </form>
+    
+</body>
+</html>
